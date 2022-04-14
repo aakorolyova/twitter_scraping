@@ -24,7 +24,7 @@ def scrape_hashtag(hashtag, path, n_items):
 
 if __name__ == '__main__':
     hashtags = ["#cats", "#dogs", "#pets"]
-    for hashtag in tqdm(hashtags[7:]):
+    for hashtag in tqdm(hashtags):
         max_tweets = 10000
         scrape_hashtag(hashtag, hashtag[1:] + '.csv', max_tweets)
 
